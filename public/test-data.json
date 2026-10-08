@@ -1,0 +1,35 @@
+{
+  "测试说明": "宠物管理系统静态测试数据（JSON），用于前端页面渲染测试，模拟后端接口返回",
+  "users": [
+    { "userId": 1, "username": "admin", "password": "123456", "role": "管理员", "phone": "13800000000" },
+    { "userId": 2, "username": "xixi", "password": "654321", "role": "宠物主人", "phone": "13911112222" },
+    { "userId": 3, "username": "zhangsan", "password": "123456", "role": "宠物主人", "phone": "13733334444" }
+  ],
+  "owners": [
+    { "ownerId": 1, "realName": "xixi", "phone": "13911112222", "address": "烟台市芝罘区", "userId": 2 },
+    { "ownerId": 2, "realName": "张三", "phone": "13733334444", "address": "烟台市莱山区", "userId": 3 }
+  ],
+  "pets": [
+    { "petId": 1, "petName": "旺旺", "variety": "金毛", "age": 2, "health": "健康", "ownerId": 1, "photo": "" },
+    { "petId": 2, "petName": "三三", "variety": "边牧", "age": 1, "health": "健康", "ownerId": 2, "photo": "" },
+    { "petId": 3, "petName": "咪咪", "variety": "布偶猫", "age": 3, "health": "健康", "ownerId": 2, "photo": "" }
+  ],
+  "services": [
+    { "serviceId": 1, "serviceName": "宠物洗澡", "price": 88, "duration": 60, "description": "专业洗护，香波护理" },
+    { "serviceId": 2, "serviceName": "宠物剪毛", "price": 120, "duration": 90, "description": "造型修剪，美容护理" },
+    { "serviceId": 3, "serviceName": "宠物驱虫", "price": 65, "duration": 30, "description": "体内外驱虫" }
+  ],
+  "reserves": [
+    { "reserveId": 1, "petName": "旺旺", "serviceName": "宠物洗澡", "reserveDate": "2026-09-18", "reserveTime": "10:00-11:00", "staffName": "阿伟", "status": "已完成", "username": "xixi" },
+    { "reserveId": 2, "petName": "三三", "serviceName": "宠物剪毛", "reserveDate": "2026-09-19", "reserveTime": "14:00-15:30", "staffName": "小美", "status": "待审核", "username": "zhangsan" }
+  ],
+  "notices": [
+    { "noticeId": 1, "title": "国庆假期营业安排", "content": "10月1日-3日正常营业，营业时间 9:00-18:00", "createTime": "2026-09-18 10:00:00", "top": 1 },
+    { "noticeId": 2, "title": "会员积分活动", "content": "消费1元积1分，50积分抵1元", "createTime": "2026-09-15 09:00:00", "top": 0 }
+  ],
+  "staff": [
+    { "staffId": 1, "staffName": "阿伟", "score": 4.8, "busy": false, "orders": 15 },
+    { "staffId": 2, "staffName": "小美", "score": 4.9, "busy": true, "orders": 20 },
+    { "staffId": 3, "staffName": "大壮", "score": 4.5, "busy": false, "orders": 10 }
+  ]
+}
